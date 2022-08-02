@@ -44,6 +44,9 @@ streamlit.text(my_data_rows)
 
 #New section to display fruityvice api response
 streamlit.header("Fruityvice Fruit Advice!")
-fruit_choice2 = streamlit.text_input('What fruit would you like to add?','jackfruit')
-streamlit.write('Thanks for adding ', fruit_choice2)
+add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
+streamlit.write('Thanks for adding ', add_my_fruit)
+
+#this not work correctly, but juet to with it for now
+my_cur.execute("insent into fruit_load_list values ('from steamlit')")
 
